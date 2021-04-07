@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video recorder</title>    
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1" id="heading"> MEDIA RECORDER</h1>
+    <video class="video" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+      <!-- <video id="vid2" controls></video> -->
+      <div class="controls">
+      
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example" id="control">
+            <!-- <button type="button" class="btn btn-danger">Left</button> -->
+            <button type="button" class="btn btn-warning" id="play">play/pause</button>
+            <button type="button" class="btn btn-success" id="startRecording">Start recording</button>
+            <button type="button" class="btn btn-primary" id="pauseRecording">pause/resume recording</button>
+            <button type="button" class="btn btn-danger" id="stopRecording">stop recording</button>
+            <!-- <button type="button" class="btn btn-dark" id="downloadRecording">download recording</button> -->
+            <button type="button" class="btn btn-info" id="downloadRecording">download recording</button>
+
+          </div>
+
+</div>
+</div>
+</body>
+
+<script src="script.js"></script>
+</html>
+<!-- <i class="fa fa-play" aria-hidden="true"></i> -->

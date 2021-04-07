@@ -1,0 +1,48 @@
+.video{
+    height: 390px;
+    position: absolute;
+    left: 182px;
+    top: 125px;
+    width: 748px;
+}
+.controls{
+    position: absolute;
+    left: 225px;
+    top: 532px;
+}
+#play{
+
+}
+#vid2{
+    height: 10px;
+
+}
+#control{
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    
+        height: 100vh;
+        width: 100vw;
+        background: black;
+        /* background: url(./resouces/astronomy-1867616__340.jpg); */
+        /* background: url(./resouces/chat_background.png); */
+        /* background: url(./resouces/w-qjCHPZbeXCQ-unsplash.jpg); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+}
+#heading{
+    font-size: 95.5px;
+    position: absolute;
+    top: 24px;
+    color: white;
+    font-family: 'Montserrat', serif;
+}
+
+
+
+
+
+
