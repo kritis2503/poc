@@ -40,7 +40,7 @@ public class ques {
         if(ctrZero<totEle)
             System.out.println("-1");
         else{
-            
+
             for(int i=0;i<n;i++){
                 int sum=0;
                 for(int j=0;j<m;j++)
@@ -54,7 +54,29 @@ public class ques {
                 colsum[j]=sum;
             }
         
+            for(int i=0;i<n;i++){
+                for(int j=0;j<m;j++){
+                    if(arr[i][j]==0)
+                        change(arr,i,j,rowsum,colsum);
+                }
+            }
+            
         
+        }
+    }
+    public static void change(int [][]arr,int i,int j,int []rowsum,int []colsum){
+        if(rowsum[i]<=colsum[j]){
+            if(arr[i][j]%2==0)
+                arr[i][j]=2;
+            else
+                arr[i][j]=1;
+        }
+        else{
+            if(arr[i][j]%3==0)
+                arr[i][j]=3;
+            else{
+                arr[i][j]=3-(arr[i][j]%3);
+            }
         }
     }
 
