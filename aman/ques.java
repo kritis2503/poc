@@ -41,6 +41,20 @@ public class ques {
             System.out.println("-1");
         else{
             
+            for(int i=0;i<n;i++){
+                int sum=0;
+                for(int j=0;j<m;j++)
+                    sum+=arr[i][j];
+                rowsum[i]=sum;
+            }
+            for(int j=0;j<n;j++){
+                int sum=0;
+                for(int i=0;i<n;i++)
+                    sum+=arr[i][j];
+                colsum[j]=sum;
+            }
+        
+        
         }
     }
 
