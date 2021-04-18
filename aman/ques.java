@@ -20,11 +20,28 @@ public class ques {
                 arr[i][j]=Integer.parseInt(lmao[j]);
             }
         }
+        // for(int i=0;i<n;i++){
+            // for(int j=0;j<m;j++){
+                // System.out.print(arr[i][j]);
+            // }
+            // System.out.println();
+        // }
+        int []rowsum=new int [n];
+        int []colsum=new int [m];
+        int ctrZero=0;
+
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                System.out.print(arr[i][j]);
+                if(arr[i][j]==0)
+                    ctrZero++;
             }
-            System.out.println();
+        }
+        int totEle=n*m;
+        if(ctrZero<totEle)
+            System.out.println("-1");
+        else{
+            
         }
     }
+
 }
