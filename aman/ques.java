@@ -47,7 +47,8 @@ public class ques {
                     sum+=arr[i][j];
                 rowsum[i]=sum;
             }
-            for(int j=0;j<n;j++){
+
+            for(int j=0;j<m;j++){
                 int sum=0;
                 for(int i=0;i<n;i++)
                     sum+=arr[i][j];
@@ -56,8 +57,8 @@ public class ques {
         
             for(int i=0;i<n;i++){
                 for(int j=0;j<m;j++){
-                    if(arr[i][j]==0)
-                        change(arr,i,j,rowsum,colsum);
+                    if(arr[i][j]==0) 
+                        change(arr,i,j,rowsum,colsum,ctrZero);
                 }
             }
 
@@ -70,7 +71,9 @@ public class ques {
         
         }
     }
-    public static void change(int [][]arr,int i,int j,int []rowsum,int []colsum){
+    public static int change(int [][]arr,int i,int j,int []rowsum,int []colsum,int ctrZero){
+        if(ctrZero<(arr.length*arr[0].length)/2)
+        return -1;
         if(rowsum[i]<=colsum[j]){
             if(arr[i][j]%2==0)
                 arr[i][j]=2;
@@ -84,6 +87,8 @@ public class ques {
                 arr[i][j]=3-(arr[i][j]%3);
             }
         }
+        ctrZero--;
+        return 0;
     }
 
 }
